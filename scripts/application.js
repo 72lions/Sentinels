@@ -29,6 +29,10 @@ var Application = (function() {
       if (_context) {
 
         this._resize();
+        
+        _mouse.x = WINDOW_WIDTH * 0.5;
+        _mouse.y = WINDOW_HEIGHT * 0.5;
+
         this._createForces();
         this._createParticles();
         this._addEventListeners();
